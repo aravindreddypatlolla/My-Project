@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+    .city{
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+    .main{
+      text-align: center;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="my function()">hide elements</button>
+    <h2>the class atttribute</h2>
+    <p> this is the paraggraph</p>
+    <h2 class="city">london</h2>
+    <p>aravind reddy</p>
+    <h3 class="city main">england</h3>
+    <p>aravind</p>
+
+
+    <script>
+    function myfunction(){
+      var x =document.getElementsByClassName("city");
+      for (var i = 0;i<x.length;i++){
+        x[i].style.display ="none";
+      }
+    }
+    </script>
+
+  </body>
+</html>
